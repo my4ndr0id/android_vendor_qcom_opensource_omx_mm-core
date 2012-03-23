@@ -45,4 +45,4 @@ c_sources +=src/$(TARGET)/qc_registry_table.c
 include_HEADERS = $(h_sources)
 lib_LTLIBRARIES = libOmxCore.la
 libOmxCore_la_SOURCES = $(c_sources)
-libOmxCore_la_LDFLAGS = -lrt -lpthread -shared -version-info $(OMXCORE_LIBRARY_VERSION)
+libOmxCore_la_LDFLAGS = -ldl -lrt -lpthread -shared -version-info $(OMXCORE_LIBRARY_VERSION)
