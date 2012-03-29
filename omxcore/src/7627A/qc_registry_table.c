@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------------------
-Copyright (c) 2011, Code Aurora Forum. All rights reserved.
+Copyright (c) 2011,2012 Code Aurora Forum. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -48,11 +48,7 @@ omx_core_cb_type core[] =
       NULL
     },
     NULL,   // Shared object library handle
-    #ifdef _ANDROID_
     "libOmxH264Dec.so",
-    #else
-    "libmm-vdec-omxh264.so.1",
-    #endif
     {
       "video_decoder.avc"
     }
@@ -84,11 +80,7 @@ omx_core_cb_type core[] =
       NULL
     },
     NULL,   // Shared object library handle
-    #ifdef _ANDROID_
     "libOmxMpeg4Dec.so",
-    #else
-    "libmm-vdec-omxmp4.so.1",
-    #endif
     {
       "video_decoder.mpeg4"
     }
@@ -120,11 +112,7 @@ omx_core_cb_type core[] =
        NULL
      },
       NULL,   // Shared object library handle
-     #ifdef _ANDROID_
      "libOmxMpeg4Dec.so",
-     #else
-     "libmm-vdec-omxmp4.so.1",
-     #endif
      {
      "video_decoder.divx"
      }
@@ -140,11 +128,7 @@ omx_core_cb_type core[] =
        NULL
      },
       NULL,   // Shared object library handle
-     #ifdef _ANDROID_
      "libOmxMpeg4Dec.so",
-     #else
-     "libmm-vdec-omxmp4.so.1",
-     #endif
      {
      "video_decoder.divx"
      }
@@ -160,11 +144,7 @@ omx_core_cb_type core[] =
       NULL
     },
     NULL,   // Shared object library handle
-    #ifdef _ANDROID_
     "libOmxWmvDec.so",
-    #else
-    "libmm-vdec-omxwmv.so.1",
-    #endif
     {
       "video_decoder.vc1"
     }
@@ -196,11 +176,7 @@ omx_core_cb_type core[] =
       NULL
     },
     NULL,   // Shared object library handle
-    #ifdef _ANDROID_
     "libOmxMpeg4Dec.so",
-    #else
-    "libmm-vdec-omxmp4.so.1",
-    #endif
     {
       "video_decoder.h263"
     }
@@ -216,11 +192,7 @@ omx_core_cb_type core[] =
       NULL
     },
     NULL,   // Shared object library handle
-    #ifdef _ANDROID_
     "libOmxVidEnc.so",
-    #else
-    "libmm-venc-omx.so.1",
-    #endif
     {
       "video_encoder.mpeg4"
     }
@@ -236,11 +208,7 @@ omx_core_cb_type core[] =
       NULL
     },
     NULL,   // Shared object library handle
-    #ifdef _ANDROID_
     "libOmxMpeg4Dec.so",
-    #else
-    "libmm-vdec-omxmp4.so.1",
-    #endif
     {
       "video_decoder.spark"
     }
@@ -256,11 +224,7 @@ omx_core_cb_type core[] =
       NULL
     },
     NULL,   // Shared object library handle
-    #ifdef _ANDROID_
     "libOmxOn2Dec.so",
-    #else
-    "libOmxOn2Dec.so",
-    #endif
     {
       "video_decoder.vp"
     }
@@ -276,11 +240,7 @@ omx_core_cb_type core[] =
        NULL
      },
      NULL,   // Shared object library handle
-     #ifdef _ANDROID_
      "libOmxVp8Dec.so",
-     #else
-     "libOmxVp8Dec.so",
-     #endif
      {
        "video_decoder.vp8"
      }
@@ -296,11 +256,7 @@ omx_core_cb_type core[] =
       NULL
     },
     NULL,   // Shared object library handle
-    #ifdef _ANDROID_
     "libOmxVidEnc.so",
-    #else
-    "libmm-venc-omx.so.1",
-    #endif
     {
       "video_encoder.h263",
     }

@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------------------
-Copyright (c) 2009,2011 Code Aurora Forum. All rights reserved.
+Copyright (c) 2009,2012 Code Aurora Forum. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -48,11 +48,7 @@ omx_core_cb_type core[] =
       NULL
     },
     NULL,   // Shared object library handle
-    #ifdef _ANDROID_
     "libOmxVdec.so",
-    #else
-    "libmm-vdec-omxh264.so.1",
-    #endif
     {
       "video_decoder.avc"
     }
@@ -68,11 +64,7 @@ omx_core_cb_type core[] =
       NULL
     },
     NULL,   // Shared object library handle
-    #ifdef _ANDROID_
     "libOmxVdec.so",
-    #else
-    "libmm-vdec-omxmp4.so.1",
-    #endif
     {
       "video_decoder.mpeg4"
     }
@@ -88,11 +80,7 @@ omx_core_cb_type core[] =
       NULL
     },
     NULL,   // Shared object library handle
-    #ifdef _ANDROID_
     "libOmxVdec.so",
-    #else
-    "libmm-vdec-omxwmv.so.1",
-    #endif
     {
       "video_decoder.vc1"
     }
@@ -108,11 +96,7 @@ omx_core_cb_type core[] =
       NULL
     },
     NULL,   // Shared object library handle
-    #ifdef _ANDROID_
     "libOmxVdec.so",
-    #else
-    "libmm-vdec-omxmp4.so.1",
-    #endif
     {
       "video_decoder.h263"
     }
@@ -160,11 +144,7 @@ omx_core_cb_type core[] =
       NULL
     },
     NULL,   // Shared object library handle
-    #ifdef _ANDROID_
     "libOmxVenc.so",
-    #else
-    "libmm-venc-omx.so.1",
-    #endif
     {
       "video_encoder.mpeg4"
     }
@@ -180,11 +160,7 @@ omx_core_cb_type core[] =
       NULL
     },
     NULL,   // Shared object library handle
-    #ifdef _ANDROID_
     "libOmxVenc.so",
-    #else
-    "libmm-venc-omx.so.1",
-    #endif
     {
       "video_encoder.h263",
     }
@@ -200,11 +176,7 @@ omx_core_cb_type core[] =
       NULL
     },
     NULL,   // Shared object library handle
-    #ifdef _ANDROID_
     "libOmxVenc.so",
-    #else
-    "libmm-venc-omx.so.1",
-    #endif
     {
       "video_encoder.avc"
     }
