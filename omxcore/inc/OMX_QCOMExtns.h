@@ -354,6 +354,8 @@ enum OMX_QCOM_EXTN_INDEXTYPE
 
     /*"OMX.QCOM.index.param.VideoMaxAllowedBitrateCheck"*/
     OMX_QcomIndexParamVideoMaxAllowedBitrateCheck = 0x7F00001E,
+
+    OMX_QcomIndexEnableSliceDeliveryMode = 0x7F00001F,
 };
 
 /**
@@ -847,6 +849,7 @@ typedef struct QOMX_INDEXTIMESTAMPREORDER {
 
 #define OMX_QCOM_INDEX_PARAM_VIDEO_SYNCFRAMEDECODINGMODE "OMX.QCOM.index.param.video.SyncFrameDecodingMode"
 #define OMX_QCOM_INDEX_PARAM_INDEXEXTRADATA "OMX.QCOM.index.param.IndexExtraData"
+#define OMX_QCOM_INDEX_PARAM_VIDEO_SLICEDELIVERYMODE "OMX.QCOM.index.param.SliceDeliveryMode"
 
 typedef enum {
     QOMX_VIDEO_FRAME_PACKING_CHECKERBOARD = 0,
