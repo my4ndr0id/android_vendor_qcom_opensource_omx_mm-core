@@ -26,6 +26,8 @@ MM_CORE_TARGET = 8660
 OMXCORE_CFLAGS += -DENABLE_DRMPLAY
 else ifeq ($(call is-board-platform,msm8960),true)
 MM_CORE_TARGET = 8960
+else ifeq ($(call is-board-platform,copper),true)
+MM_CORE_TARGET = copper
 else
 MM_CORE_TARGET = default
 endif
